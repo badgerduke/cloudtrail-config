@@ -125,7 +125,7 @@ data "aws_iam_policy_document" "aws_config_s3_bucket_policy" {
     }
 
     actions   = ["s3:PutObject"]
-    resources = ["${aws_s3_bucket.aws_config_bucket.arn}/AWSLogs/093879445146/Config/*"]
+    resources = ["${aws_s3_bucket.aws_config_bucket.arn}/AWSLogs/${data.aws_caller_identity.current.account_id}/Config/*"]
     condition {
       test     = "StringEquals"
       variable = "aws:SourceAccount"

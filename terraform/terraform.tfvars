@@ -8,7 +8,7 @@ security_group_name = "demo-sg"
 sns_topic_name = "demo-sns"
 
 # The email address subscibing to the SNS topic
-sns_email = "erichamacher@protonmail.com"
+sns_email = "<your_email>"
 
 # The name of the S3 bucket storing the AWS Config resource monitoring information
 aws_config_S3_name = "demo-config-bucket-1"
